@@ -171,3 +171,48 @@ var guestName = prompt("What is your Name?");
         alert("You are not in the list");
     }
 
+//FizzBuzz exercise in JavaScript made by the teacher//
+
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+    if (count % 3 === 0 && count % 5 === 0) {
+        output.push("FizzBuzz");
+    } else if (count % 3 === 0) {
+        output.push("Fizz");
+    } else if (count % 5 === 0) {
+        output.push("Buzz");
+    } else {
+        output.push(count);
+    }
+    count++;
+    console.log(output);
+
+}
+
+//Refactored FizzBuzz code with some improvements//
+
+function fizzBuzz(n = 100) { 
+    for (var i = 1; i <= n; i++) { 
+        var out = ''; 
+        if (i % 3 === 0) out += 'Fizz'; 
+        if (i % 5 === 0) out += 'Buzz'; 
+        console.log(out || i); 
+    } 
+} 
+
+fizzBuzz();
+
+//Paying Lunch game in JS //
+
+function whosPaying(names) {
+    
+/******Don't change the code above*******/   
+    //Write your code here.
+var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+var random = Math.floor(Math.random() * names.length);
+var randomName = names[random];
+return (randomName + " is going to buy lunch today!");
+/******Don't change the code below*******/    
+}
