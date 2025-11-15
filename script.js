@@ -216,3 +216,26 @@ var randomName = names[random];
 return (randomName + " is going to buy lunch today!");
 /******Don't change the code below*******/    
 }
+
+// 99 bottles of beer on the wall exercise in JS //
+
+var count = 100;
+
+function beer() {
+    while (count >= 1) {
+    count--;
+        if (count > 1) {
+    console.log(count + " bottles of beer on the wall, " + count + " bottles of beer.");
+            var next = count - 1;
+            console.log ("Take one down, pass it around, " + next + " bottles of beer on the wall.");
+        }
+        else if (count === 1) {
+            console.log(count + " bottle of beer on the wall, " + count + " bottle of beer.");
+            console.log( "Take one down and pass it around, no more bottles of beer on the wall." );
+        }
+    
+}
+            console.log("No more bottles of beer on the wall, no more bottles of beer.");
+            console.log("Go to the store and buy some more, 99 bottles of beer on the wall.");
+}
+beer();
